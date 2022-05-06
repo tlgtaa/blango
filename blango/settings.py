@@ -35,8 +35,11 @@ class Dev(Configuration):
         'crispy_forms',
         'crispy_bootstrap5',
         'debug_toolbar',
+        'blango_auth',
         'blog',
     ]
+
+    AUTH_USER_MODEL = 'blango_auth.User'
 
     MIDDLEWARE = [
         'django.middleware.security.SecurityMiddleware',
